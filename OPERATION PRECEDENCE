@@ -1,0 +1,30 @@
+#include<stdio.h>
+int main()
+{
+	int a=30;
+	int b=20;
+	int c=10;
+	int d=5;
+	int e;
+	e=(a+b)*c/d;
+	printf("value of(a+b)*c/d is :%d\n",e);
+	e=((a+b)*c)/d;
+	printf("value of ((a+b)*c)/d is :%d\n",e);
+	e=(a+b)*(c/d);
+	printf("value of (a+b)*(c/d) is :%d\n",e);
+	e=a+(b*c)/d;
+	printf("value of a+(b*c)/d is:%d\n",e);
+	return 0;
+	
+}
+
+
+OUTPUT:
+value of(a+b)*c/d is :100
+value of ((a+b)*c)/d is :100
+value of (a+b)*(c/d) is :100
+value of a+(b*c)/d is:70
+
+--------------------------------
+Process exited after 1.21 seconds with return value 0
+Press any key to continue . . .
