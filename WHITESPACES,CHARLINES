@@ -34,12 +34,10 @@ int main()
 }
 
 Output:
-void main()
-{
-int a;
-int b;
-a = b + c;
-c = d * e;
-}
-Total number of words : 18
-Total number of lines : 7
+output:
+Enter a string: hey this charitha
+Number of white spaces and new lines: 4
+
+--------------------------------
+Process exited after 19.09 seconds with return value 0
+Press any key to continue . 
