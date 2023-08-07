@@ -18,11 +18,31 @@ fclose(yyin);
 }
 
 Output:
+Microsoft Windows [Version 10.0.22000.1936]
+(c) Microsoft Corporation. All rights reserved.
 
-G:\lex>flex count_macro.l
+C:\Users\hp>cd compiler
 
-G:\lex>gcc lex.yy.c
+C:\Users\hp\compiler>set path=C:\Program Files (x86)\GnuWin32\bin
 
-G:\lex>a.exe sample.c
-Number of macros defined = 1
-Number of header files included = 2
+C:\Users\hp\compiler>flex macros.l.txt
+
+C:\Users\hp\compiler>set path=C:\MinGW\bin
+
+C:\Users\hp\compiler>gcc lex.yy.c
+
+C:\Users\hp\compiler>a
+Number of macros defined = 0
+^C
+C:\Users\hp\compiler>a
+iam an ncc cadet
+Number of macros defined = 0
+^C
+C:\Users\hp\compiler>a
+<html>
+<body>
+</body>
+</html>
+Number of macros defined = 0
+^C
+
