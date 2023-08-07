@@ -1,5 +1,3 @@
-
-Program: (html.l)
 %{
 int tags;
 %}
@@ -24,20 +22,28 @@ fclose(yyin);
 
 OUTPUT:
 
-G:\lex>flex html.l
+ Microsoft Windows [Version 10.0.22000.1936]
+(c) Microsoft Corporation. All rights reserved.
 
-G:\lex>gcc lex.yy.c
+C:\Users\hp>cd compiler
 
-G:\lex>a.exe
-Enter File Name : sample.html
-<html>
+C:\Users\hp\compiler>set path=C:\Program Files (x86)\GnuWin32\bin
+
+C:\Users\hp\compiler>flex html.l.txt
+
+C:\Users\hp\compiler>set path=C:\MinGW\bin
+
+C:\Users\hp\compiler>gcc lex.yy.c
+
+C:\Users\hp\compiler>a
+Enter File Name : jamalamma
+
+ Number of html tags: 0
+C:\Users\hp\compiler>a
+Enter File Name : <html>
 <body>
-<h1>
-</h1>
-<p>
-</p>
+<body>
+</body>
 </body>
 </html>
-
- Number of html tags: 8
-G:\lex>
+ Number of html tags: 2
