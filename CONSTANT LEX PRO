@@ -23,12 +23,22 @@ fclose(yyin);
 
 Output:
 
-G:\lex>flex countconstants.l
+Microsoft Windows [Version 10.0.22000.1936]
+(c) Microsoft Corporation. All rights reserved.
 
-G:\lex>gcc lex.yy.c
+C:\Users\hp>cd compiler
 
-G:\lex>a.exe
-Enter File Name : sample.c
-314 is a constant
-30 is a constant
-Number of Constants : 2
+C:\Users\hp\compiler>set path=C:\Program Files (x86)\GnuWin32\bin
+
+C:\Users\hp\compiler>flex constant.l.txt
+
+C:\Users\hp\compiler>set path=C:\MinGW\bin
+
+C:\Users\hp\compiler>gcc lex.yy.c
+
+C:\Users\hp\compiler>a
+Enter File Name : sample
+123
+123 is a constant
+jam
+Number of Constants : 1
