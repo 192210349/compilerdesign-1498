@@ -15,3 +15,40 @@ int main()
 {
 yylex();
 }
+
+OUTPUT:
+output:
+c) Microsoft Corporation. All rights reserved.
+
+C:\Users\hp>cd compiler
+
+C:\Users\hp\compiler>set path=C:\Program Files (x86)\GnuWin32\bin
+
+C:\Users\hp\compiler>flex keywordidentifier.l.txt
+
+C:\Users\hp\compiler>set path=C:\MinGW\bin
+
+C:\Users\hp\compiler>gcc lex.yy.c
+
+C:\Users\hp\compiler>a
+This is charitha,from cse department.
+
+This is IDENTIFIER
+is is IDENTIFIER
+charitha is IDENTIFIER,
+from is IDENTIFIER
+cse is IDENTIFIER
+department is IDENTIFIER.
+a=a+b+c*d%e
+
+a is IDENTIFIER=
+a is IDENTIFIER+
+b is IDENTIFIER+
+c is IDENTIFIER*
+d is IDENTIFIER%
+e is IDENTIFIER
+int student,float marks
+its a keyword
+student is IDENTIFIER,
+float is IDENTIFIER
+marks is IDENTIFIER
