@@ -20,11 +20,21 @@ fclose(yyin);
 }
 
 Output:
-G:\lex>flex count_line.l
+Microsoft Windows [Version 10.0.22000.1936]
+(c) Microsoft Corporation. All rights reserved.
 
-G:\lex>gcc lex.yy.c
+C:\Users\hp>cd compiler
 
-G:\lex>a.exe sample.c
-Number of characters = 233
-Number of words = 33
-Number of lines = 10
+C:\Users\hp\compiler>set path=C:\Program Files (x86)\GnuWin32\bin
+
+C:\Users\hp\compiler>flex charwordline.l.txt
+
+C:\Users\hp\compiler>set path=C:\MinGW\bin
+
+C:\Users\hp\compiler>gcc lex.yy.c
+
+C:\Users\hp\compiler>a
+hey what are u doing
+Lines = 1
+Chars=21
+Words=5
