@@ -1,29 +1,40 @@
-Program: (email_valid.l)
 %{
-int flag=0;
 %}
+
+
 %%
-[a-z . 0-9]+@[a-z]+".com"|".in" { flag=1; }
+
+
+[a-z.0-9_]+@[a-z]+".com"|".in" { printf("it is valid");}
+.+ { printf("it is not valid");}
 %%
+
+
+int yywrap()
+{}
+
+
 int main()
 {
+pintf("enter the mail:");
 yylex();
-if(flag==1)
-printf("Accepted");
-else
-printf("Not Accepted");
-}
-int yywrap()
-{ return 1;
- }
+} 
+output:
+Microsoft Windows [Version 10.0.22000.1936]
+(c) Microsoft Corporation. All rights reserved.
 
-Output:
+C:\Users\hp>cd compiler
 
-G:\lex>flex email_valid.l
+C:\Users\hp\compiler>set path=C:\Program Files (x86)\GnuWin32\bin
 
-G:\lex>gcc lex.yy.c
+C:\Users\hp\compiler>flex email.l.txt
 
-G:\lex>a.exe
-sse123@gmail.com
+C:\Users\hp\compiler>set path=C:\MinGW\bin
 
-Accepted
+C:\Users\hp\compiler>gcc lex.yy.c
+
+C:\Users\hp\compiler>a
+enter the mail:sscharithareddy@gmail.com
+it is valid
+123cherry
+it is not valid
