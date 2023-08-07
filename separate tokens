@@ -19,3 +19,20 @@ int main()
     printf("\n total no. of token = %d\n", n);   
 
 }
+OUTPUT:
+Microsoft Windows [Version 10.0.22000.2176]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\HP>cd compiler
+
+C:\Users\HP\compiler>set path=C:\Program Files (x86)\GnuWin32\bin
+
+C:\Users\HP\compiler>flex separatetokens.l.txt
+
+C:\Users\HP\compiler>set path=C:\MinGW\bin
+
+C:\Users\HP\compiler>gcc lex.yy.c
+
+C:\Users\HP\compiler>a
+this is charitha,from cse department
+         identifier : this       separator :     identifier : is         separator :     identifier : charitha  separator : ,   identifier : from     
