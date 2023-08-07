@@ -1,0 +1,38 @@
+%{
+#include<stdio.h>
+%}
+
+%% 
+
+[0-9][0-9]\/[0-1][0-9]\/[1-2][0-9]{3} { printf("valid");}
+.+ { printf("invalid");}
+%%
+
+int yywrap(){}
+
+int main()
+{
+yylex();
+}
+
+
+
+OUTPUT:
+microsoft Windows [Version 10.0.22000.1936]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\HP>cd compiler
+
+C:\Users\HP\compiler>set path=C:\Program Files (x86)\GnuWin32\bin
+
+C:\Users\HP\compiler>flex dob.l.txt
+
+C:\Users\HP\compiler>set path=C:\MinGW\bin
+
+C:\Users\HP\compiler>gcc lex.yy.c
+
+C:\Users\HP\compiler>a
+11/10/2003
+Valid DoB
+1/13/2004
+Invalid DoB
