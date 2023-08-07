@@ -10,13 +10,22 @@ yylex();
 return 0;
 }
 Output:
-G:\lex>flex digit_or_not.l
+output:
+Microsoft Windows [Version 10.0.22000.1936]
+(c) Microsoft Corporation. All rights reserved.
 
-G:\lex>gcc lex.yy.c
+C:\Users\hp>cd compiler
 
-G:\lex>a.exe
-23
-Valid digit
+C:\Users\hp\compiler>set path=C:\Program Files (x86)\GnuWin32\bin
 
-h56
-Invalid digit
+C:\Users\hp\compiler>flex digit.l.txt
+
+C:\Users\hp\compiler>set path=C:\MinGW\bin
+
+C:\Users\hp\compiler>gcc lex.yy.c
+
+C:\Users\hp\compiler>a
+enter the digit:10
+digit
+ab
+not a digit
